@@ -7,7 +7,7 @@ var Design = {
   			indexScroll: 0,
   			courseCompletion: 0,
       			url: "#"
-  			},
+  		},
 
 		didScroll: false,
 
