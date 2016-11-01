@@ -3,23 +3,23 @@ var Design = {
   parallax: {
 
 		data: {
-      range: [ 20, 50, 30, 60, 40, 25, 65, 35, 45, 55 ],
-  		indexScroll: 0,
-  		courseCompletion: 0,
-      url: "",
-
-  	},
+      			range: [ 20, 50, 30, 60, 40, 25, 65, 35, 45, 55 ],
+  			indexScroll: 0,
+  			courseCompletion: 0,
+      			url: "#"
+  			},
 
 		didScroll: false,
 
-		init: function(selector) {
-      $window = $(window);
-      $body = $("body");
+		init: function(selector, url) {
+			Design.parallax.data.url = url if url
+      			$window = $(window);
+      			$body = $("body");
 
-      $window.on("scroll", function(e) {
-        Design.parallax.data.indexScroll = $window.scrollTop();
-        Design.parallax.data.courseCompletion = ( Design.parallax.data.indexScroll / $window.height() ) * 100
-      });
+      			$window.on("scroll", function(e) {
+      				Design.parallax.data.indexScroll = $window.scrollTop();
+			        Design.parallax.data.courseCompletion = ( Design.parallax.data.indexScroll / $window.height() ) * 100
+			});
 
 
 			var letters = selector.html().split( "" );
@@ -52,7 +52,7 @@ var Design = {
 
 			for ( var i = 0, len = letters.length; i < len; i++ ) {
 				$('<div class="letter">' +
-				  '<a href="#">' +
+				  '<a href="'+Design.parallax.data.url+'">' +
 				   letters[i] +
 				  '</a>' +
 				  '</div>'
