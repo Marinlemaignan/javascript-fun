@@ -1,0 +1,67 @@
+body{
+  /* background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,0) 30%, rgba(0,212,255,0.6068628134847689) 80%); */
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(29,253,192,0.45840342973126746) 26%, rgba(29,253,192,0.4500000683867297) 69%, rgba(252,176,69,1) 100%);
+}
+
+.letter {
+  float: left;
+  margin: 15px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.letter a {
+  text-decoration: none;
+}
+
+.ha {
+  opacity: 0.7;
+  margin-top: 100px;
+}
+
+.hb {
+  opacity: 0.5;
+  margin-top: 200px;
+}
+
+.hc {
+  opacity: 0.3;
+  margin-top: 300px;
+}
+
+.hd {
+  opacity: 0.3;
+  margin-top: 400px;
+}
+
+.letters_inner_container {
+  overflow: visible;
+  /* position: absolute;
+  top: 200px;
+  left:0;
+  right:0;
+  bottom: 0; */
+  width: max-content;
+  max-width: 1080px;
+  margin: 100px auto;
+  height: 900px;
+}
+
+.i_love_that_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  min-height: 1800px;
+}
+
+.header {
+  overflow: visible;
+}
